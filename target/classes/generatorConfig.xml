@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+    <!--
+        context:生成一组对象的环境
+        id:必选，上下文id，用于在生成错误时提示
+        targetRuntime:
+            1，MyBatis3：默认的值，豪华版，生成带条件的crud；
+            2，MyBatis3Simple：普通版，生成普通的crud；
+    -->
+    <context id="mysql" targetRuntime="MyBatis3">
+        <!-- 生成的Java文件的编码 -->
+        <property name="javaFileEncoding" value="UTF-8"/>
+        <!-- 必须要有的，使用这个配置链接数据库-->
+        <jdbcConnection driverClass="com.mysql.cj.jdbc.Driver"
+                        connectionURL="jdbc:mysql://127.0.0.1:3306/test"
+                        userId="root"
+                        password="123123">
+        </jdbcConnection>
+        <!-- java模型创建器，是必须要的元素
+            targetPackage：生成的类要放的包；
+            targetProject：目标项目，指定一个存在的目录下
+         -->
+        <javaModelGenerator targetPackage="com.bdqn.pojo"
+                            targetProject="src/main/java">
+            <!-- enableSubPackages:配置为true，上面的.就是一层包 -->
+            <property name="enableSubPackages" value="true"/>
+        </javaModelGenerator>
+
+        <!-- 生成mapper映射文件的策略
+         -->
+        <sqlMapGenerator targetPackage="com.bdqn.mapper" targetProject="src/main/resources">
+            <!-- 是否使用子包,默认为false -->
+            <property name="enableSubPackages" value="true"/>
+        </sqlMapGenerator>
+
+        <!-- 对于mybatis来说，即生成Mapper接口，注意，如果没有配置该元素，那么默认不会生成Mapper接口
+            targetPackage/targetProject:同javaModelGenerator
+            type：选择怎么生成mapper接口（在MyBatis3/MyBatis3Simple下）：
+                1，ANNOTATEDMAPPER：会生成使用Mapper接口+Annotation的方式创建（SQL生成在annotation中），不会生成对应的XML；
+                2，MIXEDMAPPER：使用混合配置，会生成Mapper接口，并适当添加合适的Annotation，但是XML会生成在XML中；
+                3，XMLMAPPER：会生成Mapper接口，接口完全依赖XML；
+            注意，如果context是MyBatis3Simple：只支持ANNOTATEDMAPPER和XMLMAPPER
+        -->
+        <javaClientGenerator targetPackage="com.bdqn.mapper" type="XMLMAPPER" targetProject="src/main/java">
+            <property name="enableSubPackages" value="true"/>
+        </javaClientGenerator>
+
+        <!-- 逆向分析的表 -->
+        <!-- domainObjectName:生成的实体类名字 -->
+        <!-- tableName:如果设置*则所有表都生成,则不需要配置名字 -->
+        <table tableName="cart" domainObjectName="CartItem"/>
+    </context>
+</generatorConfiguration>
