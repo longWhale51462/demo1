@@ -6,7 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f87bae4-e68b-4059-b819-e4944f08ca4b" name="Default Changelist" comment="" />
+    <list default="true" id="4f87bae4-e68b-4059-b819-e4944f08ca4b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -210,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1708131472502</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="commit2">
+      <created>1708131511674</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1708131511674</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,14 +267,18 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="557" y="315" key="#com.intellij.javaee.module.view.web.EditWebRootDialog/0.0.1536.816@0.0.1536.816" timestamp="1708044357168" />
-    <state x="372" y="2" key="CommitChangelistDialog2" timestamp="1708131471491">
+    <state x="372" y="2" key="CommitChangelistDialog2" timestamp="1708131510655">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="372" y="2" key="CommitChangelistDialog2/0.0.1536.816@0.0.1536.816" timestamp="1708131471491" />
+    <state x="372" y="2" key="CommitChangelistDialog2/0.0.1536.816@0.0.1536.816" timestamp="1708131510655" />
     <state x="528" y="113" key="FileChooserDialogImpl" timestamp="1708072757043">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="528" y="113" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1708072757043" />
+    <state x="644" y="302" width="272" height="211" key="Github.ShareDialog" timestamp="1708131681790">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="644" y="302" width="272" height="211" key="Github.ShareDialog/0.0.1536.816@0.0.1536.816" timestamp="1708131681790" />
     <state width="1493" height="208" key="GridCell.Tab.0.bottom" timestamp="1708076233381">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
@@ -322,10 +335,10 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="477" y="124" key="MultipleFileMergeDialog/0.0.1536.816@0.0.1536.816" timestamp="1708130989873" />
-    <state x="217" y="28" key="SettingsEditor" timestamp="1708131433947">
+    <state x="217" y="28" key="SettingsEditor" timestamp="1708131570752">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="217" y="28" key="SettingsEditor/0.0.1536.816@0.0.1536.816" timestamp="1708131433947" />
+    <state x="217" y="28" key="SettingsEditor/0.0.1536.816@0.0.1536.816" timestamp="1708131570752" />
     <state x="490" y="150" width="540" height="524" key="StructurePopup" timestamp="1708048060426">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
