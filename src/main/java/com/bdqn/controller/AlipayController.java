@@ -28,7 +28,7 @@ public class AlipayController {
         json.put("product_code","FAST_INSTANT_TRADE_PAY");
         payRequest.setBizContent(json.toString());
         payRequest.setReturnUrl("https://www.baidu.com");
-        System.out.println("支付成功");
+        System.out.println("支付成功2");
         return defaultAlipayClient.pageExecute(payRequest).getBody();
 
     }
