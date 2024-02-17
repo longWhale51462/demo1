@@ -29,6 +29,8 @@ public class AlipayController {
         payRequest.setBizContent(json.toString());
         payRequest.setReturnUrl("https://www.baidu.com");
         System.out.println("支付成功2");
+        System.out.println("支付成功2");
+        System.out.println("支付成功2");
         return defaultAlipayClient.pageExecute(payRequest).getBody();
 
     }
